@@ -12,8 +12,6 @@
 
 #include "sh_main.h"
 
-t_main	*main_struct;
-
 void	sh_signal_set(void)
 {
 	signal(SIGWINCH, sh_sig_screen_resize);
