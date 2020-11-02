@@ -12,11 +12,9 @@
 
 #include "sh_main.h"
 
-t_main	*main_struct;
-
 void	sh_sig_ctrl_c(int a)
 {
-//	extern t_main	*main_struct;
+	extern t_main	*main_struct;
 
 	(void)a;
 	tcsetattr(main_struct->fd, TCSANOW, &main_struct->t_curr);

@@ -12,11 +12,9 @@
 
 #include "sh_main.h"
 
-t_main	*main_struct;
-
 void	sh_sig_bus_error(int a)
 {
-//	extern t_main	*main_struct;
+	extern t_main	*main_struct;
 
 	(void)a;
 	//ft_putstr_fd("\n21sh: bus error\n", main_struct->fd);

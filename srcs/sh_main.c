@@ -12,12 +12,10 @@
 
 #include "sh_main.h"
 
-t_main	*main_struct;
-
 int main(int argc, char **argv, char **env)
 {
     t_main			*main;
-//	extern t_main	*main_struct;
+	extern t_main	*main_struct;
 
 	//ft_printf("Starting 21sh...\n");
 	main_struct = sh_add_main_struct(env);

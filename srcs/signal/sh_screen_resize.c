@@ -12,11 +12,9 @@
 
 #include "sh_main.h"
 
-t_main	*main_struct;
-
 void	sh_sig_screen_resize(int a)
 {
-//	extern t_main	*main_struct;
+	extern t_main	*main_struct;
 
 	(void)a;
 	sh_ioctl(main_struct);
